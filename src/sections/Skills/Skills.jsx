@@ -1,7 +1,11 @@
 import styles from './SkillsStyles.module.css'
-import checkMarkIcon from '../../assets/checkmark-dark.svg'
+import checkMarkIconDark from '../../assets/checkmark-dark.svg';
+import checkMarkIconLight from '../../assets/checkmark-light.svg';
 import SkillsList from '../../common/SkillList'
+import {UseTheme} from '../../common/ThemeContext';
 function Skills() {
+  const { theme } = UseTheme();
+  const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
   return (
     <section id="skills" className={styles.container}>
         <h1 className="sectionTitle">Skills</h1>

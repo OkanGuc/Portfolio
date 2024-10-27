@@ -18,7 +18,7 @@ function Perso() {
     <section id="perso" className={style.container}>
         <div className={style.colorModeContainer}>
             <img 
-            className={style.Perso}
+            className={style.perso}
              src={OkanImg} 
              alt="image de profil de okan"
              />

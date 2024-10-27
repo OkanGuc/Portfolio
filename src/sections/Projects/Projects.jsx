@@ -22,13 +22,13 @@ function Projects() {
             src={DiamondBallZ} 
             link={DiamondApk}
             h3="Diamond Ball Z"
-            p="Application mobile de jeu pour Android basé sur le jeu Bejeweled avec des éléments de Dragon Ball Z"
+            p="Application mobile de jeu pour Android basé sur le jeu Bejeweled avec des éléments de Dragon Ball Z (cliquer pour télécharger l'apk)"
             />
             <ProjectCard 
             src={FasCars} 
             link={FasCarsApk}
             h3="FasCars"
-            p="Application de gestion de location de voitures pour l'entreprise FasCars pour android (version personnel)"
+            p="Application de gestion de location de voitures pour l'entreprise FasCars pour android (version personnel)(cliquer pour télécharger l'apk)"
             />
             <ProjectCard 
             src={serpentarium} 
