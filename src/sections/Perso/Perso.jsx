@@ -53,7 +53,7 @@ function Perso() {
                         {/*
                         <a href={CV} download>
                             <button className="hover">
-                               test
+                               test cv
                             </button>
                         </a>
                         */}
