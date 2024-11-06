@@ -7,6 +7,7 @@ import DiamondApk from '../../assets/DiamondBallsZ.apk'
 import FasCars from '../../assets/FasCars.jpg'
 import FasCarsApk from '../../assets/FasCars.apk'
 import serpentarium from '../../assets/serpentarium.jpg'
+import jeudetir from '../../assets/jeudetir.jpg'
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
@@ -35,6 +36,12 @@ function Projects() {
             link="https://serpentarium.okan-g.fr/index.php?page=accueil"
             h3="Serpentarium"
             p="Site web d'élevage de serpents"
+            />
+            <ProjectCard
+            src={jeudetir}
+            link="https://jeu-de-tir-okan-guc.netlify.app/"
+            h3="Jeu de tir"
+            p="Jeu de tir avec une cible mobile"
             />
         </div>
     </section>
