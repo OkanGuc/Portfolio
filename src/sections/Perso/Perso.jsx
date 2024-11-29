@@ -6,9 +6,9 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import gitHubLight from '../../assets/github-light.svg';
 import gitHubDark from '../../assets/github-dark.svg';
-import CValt from '../../assets/CV_Okan_Gucukoalt.pdf';
+{/*import CValt from '../../assets/CV_Okan_Gucukoalt.pdf';*/}
 import {UseTheme} from '../../common/ThemeContext';
- {/* import CV from '../../assets/CV_OKANGUCUKO.pdf'; */}
+ import CV from '../../assets/CV_OKANGUCUKO.pdf';
 function Perso() {
         const {theme,toggleTheme} = UseTheme();
         const themeIcon = theme === 'light' ? sun : moon;
@@ -45,7 +45,7 @@ function Perso() {
                         Je suis développeur d'applications web et mobiles, 
                         spécialisé dans la création de solutions performantes et intuitives, 
                         adaptées aux besoins des entreprises.</p>
-                        <a href={CValt} download>
+                        <a href={CV} download>
                             <button className="hover">
                                 Télécharger CV
                             </button>
