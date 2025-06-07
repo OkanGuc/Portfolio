@@ -32,7 +32,7 @@ function Perso() {
                 <h1>Okan
                     <br/>
                     Gucuko</h1>
-                    <h2>Développeur d'applications</h2>
+                    <h2>Développeur Full-Stack</h2>
                     <span>
                         <a href="https://www.linkedin.com/in/okan-gucuko/" target="_blank">
                         <img src={linkedinIcon} alt="linkedin"/>
