@@ -8,11 +8,18 @@ import FasCars from '../../assets/FasCars.jpg'
 import FasCarsApk from '../../assets/FasCars.apk'
 import serpentarium from '../../assets/serpentarium.jpg'
 import jeudetir from '../../assets/jeudetir.jpg'
+import OGSite from '../../assets/OGSite.png'
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
         <h1 className="SectionTitle">Projets</h1>
         <div className={styles.projectsContainer}>
+            <ProjectCard
+              src={OGSite}
+              link='https://okan-deneyim.site'
+              h3='OG Site'
+              p="Site Internet développer avec Wordpress"
+            />
             <ProjectCard 
             src={excursion} 
             link='https://sites.freeboxos.fr/Excursion/' 
