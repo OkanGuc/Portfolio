@@ -9,11 +9,19 @@ import FasCarsApk from '../../assets/FasCars.apk'
 import serpentarium from '../../assets/serpentarium.jpg'
 import jeudetir from '../../assets/jeudetir.jpg'
 import OGSite from '../../assets/OGSite.png'
+import chezmire from '../../assets/chezmire.png'
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
         <h1 className="SectionTitle">Projets</h1>
         <div className={styles.projectsContainer}>
+
+            <ProjectCard
+              src={chezmire}
+              link='https://chez-mire-bischwiller.fr/'
+              h3='Chez MIRE'
+              p="Site internet fait pour une épicerie a Bischwiller"
+            />
             <ProjectCard
               src={OGSite}
               link='https://okan-deneyim.site'
