@@ -3,7 +3,7 @@ import styles from './FooterStyles.module.css'
 function Footer() {
   return (
     <section id='footer' className={styles.container}>
-        <p>&copy; 2024 Gucuko Okan.<br/> 
+        <p>&copy; 2026 Gucuko Okan.<br/> 
         Tout droits réservés.
         </p>
 
