@@ -10,12 +10,19 @@ import serpentarium from '../../assets/serpentarium.jpg'
 import jeudetir from '../../assets/jeudetir.jpg'
 import OGSite from '../../assets/OGSite.png'
 import chezmire from '../../assets/chezmire.png'
+import taskmanager from '../../assets/taskmanager.png'
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
         <h1 className="SectionTitle">Projets</h1>
         <div className={styles.projectsContainer}>
 
+            <ProjectCard
+            src={taskmanager}
+            link='https://69f078000d9e9dd70f7c4daa--task-managerok.netlify.app'
+            h3='task manager'
+            p="Développement d'une application web full-stack de gestion de tâches. React, Node.js, Express, MySQL. Déployée en production sur Netlify et Render."
+            />
             <ProjectCard
               src={chezmire}
               link='https://chez-mire-bischwiller.fr/'
