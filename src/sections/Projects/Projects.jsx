@@ -19,7 +19,7 @@ function Projects() {
 
             <ProjectCard
             src={taskmanager}
-            link='https://69f078000d9e9dd70f7c4daa--task-managerok.netlify.app'
+            link='https://task-managerok.netlify.app/'
             h3='task manager'
             p="Développement d'une application web full-stack de gestion de tâches. React, Node.js, Express, MySQL. Déployée en production sur Netlify et Render."
             />
