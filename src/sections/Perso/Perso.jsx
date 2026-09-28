@@ -24,7 +24,8 @@ function Perso() {
             <p className={style.description}>
                 Je suis développeur d’applications web et mobiles,
                 spécialisé dans la création de solutions performantes et intuitives,
-                adaptées aux besoins des entreprises.</p>
+                adaptées aux besoins des entreprises.
+                Je développe aujourd’hui mes compétences en IA : API LLM, agents et automatisations n8n.</p>
             <div className={style.actions}>
                 <a
                   className="btn btnPrimary"
