@@ -2,12 +2,12 @@ import styles from './FooterStyles.module.css'
 
 function Footer() {
   return (
-    <section id='footer' className={styles.container}>
-        <p>&copy; 2026 Gucuko Okan.<br/> 
-        Tout droits réservés.
-        </p>
-
-    </section>
+    <footer className={styles.footer}>
+        <div className={`wrapper ${styles.inner}`}>
+            <p>&copy; 2026 Gucuko Okan. Tous droits réservés.</p>
+            <a href="#perso">Retour en haut ↑</a>
+        </div>
+    </footer>
   )
 }
 

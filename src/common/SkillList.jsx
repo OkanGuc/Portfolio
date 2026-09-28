@@ -1,11 +1,14 @@
 import React from 'react'
+import styles from './SkillList.module.css'
 
-function SkillList({src,skill}) {
+function SkillList({title, skills}) {
   return (
-    <span>
-        <img src={src} alt="check mark icon" />
-        <p>{skill}</p>
-    </span>
+    <div className={styles.group}>
+        <h3>{title}</h3>
+        <ul>
+            {skills.map(skill => <li key={skill}>{skill}</li>)}
+        </ul>
+    </div>
   )
 }
 

@@ -1,35 +1,17 @@
 import styles from './SkillsStyles.module.css'
-import checkMarkIconDark from '../../assets/checkmark-dark.svg';
-import checkMarkIconLight from '../../assets/checkmark-light.svg';
-import SkillsList from '../../common/SkillList'
-import {UseTheme} from '../../common/ThemeContext';
+import SkillList from '../../common/SkillList'
+
 function Skills() {
-  const { theme } = UseTheme();
-  const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
   return (
-    <section id="skills" className={styles.container}>
-        <h1 className="sectionTitle">Skills</h1>
-        <div className={styles.skillList}>
-            <SkillsList src={checkMarkIcon} skill="HTML" />
-            <SkillsList src={checkMarkIcon} skill="CSS" />
-            <SkillsList src={checkMarkIcon} skill="PHP" />
-            <SkillsList src={checkMarkIcon} skill="Laravel" />
-            <SkillsList src={checkMarkIcon} skill="JavaScript"/>
-            <SkillsList src={checkMarkIcon} skill="React" />
+    <section id="skills" className="wrapper">
+        <div className="sectionHeader">
+            <p className="eyebrow">Compétences</p>
+            <h2 className="sectionTitle">Skills</h2>
         </div>
-        <hr/>
-        <div className={styles.skillList}>
-            <SkillsList src={checkMarkIcon} skill="React-native" />
-            <SkillsList src={checkMarkIcon} skill="Android" />
-            <SkillsList src={checkMarkIcon} skill="JAVA" />
-            <SkillsList src={checkMarkIcon} skill="Python" />
-            <SkillsList src={checkMarkIcon} skill="SQL"/>
-        </div>
-        <hr/>
-        <div className={styles.skillList}>
-            <SkillsList src={checkMarkIcon} skill="Redux" />
-            <SkillsList src={checkMarkIcon} skill="Git" />
-            <SkillsList src={checkMarkIcon} skill="Bootstrap" />
+        <div className={styles.grid}>
+            <SkillList title="Web" skills={['HTML', 'CSS', 'PHP', 'Laravel', 'JavaScript', 'React']} />
+            <SkillList title="Mobile & langages" skills={['React Native', 'Android', 'Java', 'Python', 'SQL']} />
+            <SkillList title="Outils" skills={['Redux', 'Git', 'Bootstrap']} />
         </div>
     </section>
   );

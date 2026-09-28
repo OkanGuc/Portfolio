@@ -1,55 +1,51 @@
 import style from './PersoStyles.module.css';
 import OkanImg from '../../assets/okanimage.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import gitHubLight from '../../assets/github-light.svg';
 import gitHubDark from '../../assets/github-dark.svg';
 import {UseTheme} from '../../common/ThemeContext';
 function Perso() {
-        const {theme,toggleTheme} = UseTheme();
-        const themeIcon = theme === 'light' ? sun : moon;
+        const {theme} = UseTheme();
         const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
         const gitHubIcon = theme === 'light' ? gitHubLight : gitHubDark;
   return (
-    <section id="perso" className={style.container}>
-        <div className={style.colorModeContainer}>
-            <img 
-            className={style.perso}
-             src={OkanImg} 
-             alt="image de profil de okan"
+    <section id="perso" className={`wrapper ${style.container}`}>
+        <div className={style.avatar}>
+            <img
+             src={OkanImg}
+             alt="Portrait illustré d’Okan Gucuko"
              />
-            <img 
-            className={style.colorMode} 
-            src={themeIcon} 
-            alt="couleur de thème" 
-            onClick={toggleTheme}
-            />
-            <div className={style.info}>
-                <h1>Okan
-                    <br/>
-                    Gucuko</h1>
-                    <h2>Développeur Full-Stack</h2>
-                    <span>
-                        <a href="https://www.linkedin.com/in/okan-gucuko/" target="_blank">
-                        <img src={linkedinIcon} alt="linkedin"/>
-                        </a>
-                        <a href="https://github.com/okanGuc" target="_blank">
-                        <img src={gitHubIcon} alt="Github"/>
-                        </a>
-                    </span>
-                    <p className={'style.description'}>
-                        Je suis développeur d'applications web et mobiles, 
-                        spécialisé dans la création de solutions performantes et intuitives, 
-                        adaptées aux besoins des entreprises.</p>
-                        <a href={`${import.meta.env.BASE_URL}CV_OKANGUCUKO.pdf`} download="CV_OKANGUCUKO.pdf">
-                            <button className="hover">
-                                Télécharger CV
-                            </button>
-                        </a>
-                </div>
+        </div>
+        <div className={style.info}>
+            <p className="eyebrow">Bonjour, je suis</p>
+            <h1 className={style.name}>Okan Gucuko</h1>
+            <h2 className={style.role}>Développeur <span>Full-Stack</span></h2>
+            <p className={style.description}>
+                Je suis développeur d’applications web et mobiles,
+                spécialisé dans la création de solutions performantes et intuitives,
+                adaptées aux besoins des entreprises.</p>
+            <div className={style.actions}>
+                <a
+                  className="btn btnPrimary"
+                  href={`${import.meta.env.BASE_URL}CV_OKANGUCUKO.pdf`}
+                  download="CV_OKANGUCUKO.pdf"
+                >
+                    Télécharger CV
+                </a>
+                <a className="btn btnSecondary" href="#contact">
+                    Me contacter
+                </a>
             </div>
+            <div className={style.socials}>
+                <a href="https://www.linkedin.com/in/okan-gucuko/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src={linkedinIcon} alt=""/>
+                </a>
+                <a href="https://github.com/okanGuc" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src={gitHubIcon} alt=""/>
+                </a>
+            </div>
+        </div>
     </section>
   )
 }

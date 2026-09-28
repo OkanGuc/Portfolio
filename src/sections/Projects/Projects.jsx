@@ -13,9 +13,13 @@ import chezmire from '../../assets/chezmire.png'
 import taskmanager from '../../assets/taskmanager.png'
 function Projects() {
   return (
-    <section id="projects" className={styles.container}>
-        <h1 className="SectionTitle">Projets</h1>
-        <div className={styles.projectsContainer}>
+    <section id="projects" className="wrapper">
+        <div className="sectionHeader">
+            <p className="eyebrow">Réalisations</p>
+            <h2 className="sectionTitle">Projets</h2>
+            <p className="sectionLead">Une sélection d’applications web et mobiles, du site vitrine à l’application full-stack déployée en production.</p>
+        </div>
+        <div className={styles.grid}>
 
             <ProjectCard
             src={taskmanager}
@@ -44,12 +48,16 @@ function Projects() {
             <ProjectCard 
             src={DiamondBallZ} 
             link={DiamondApk}
+            download
+            cta="Télécharger l'APK"
             h3="Diamond Ball Z"
             p="Jeu mobile Android inspiré de Bejeweled avec un univers Dragon Ball Z · Développé en React Native"
             />
             <ProjectCard 
             src={FasCars} 
             link={FasCarsApk}
+            download
+            cta="Télécharger l'APK"
             h3="FasCars"
             p="Application mobile de gestion de parc automobile · Développée en React Native avec API REST et base de données · Livrée en 4 mois, déployée en production"
             />
