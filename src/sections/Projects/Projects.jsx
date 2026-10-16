@@ -11,6 +11,8 @@ import jeudetir from '../../assets/jeudetir.jpg'
 import OGSite from '../../assets/OGSite.png'
 import chezmire from '../../assets/chezmire.png'
 import taskmanager from '../../assets/taskmanager.png'
+import goclean from '../../assets/goclean.jpg'
+import mcbatiment from '../../assets/mcbatiment.jpg'
 function Projects() {
   return (
     <section id="projects" className="wrapper">
@@ -20,6 +22,19 @@ function Projects() {
             <p className="sectionLead">Une sélection d’applications web et mobiles, du site vitrine à l’application full-stack déployée en production.</p>
         </div>
         <div className={styles.grid}>
+
+            <ProjectCard
+            src={goclean}
+            link='https://dulcet-cupcake-e1cbab.netlify.app/'
+            h3='Go Clean 89'
+            p="Site et système de réservation en ligne pour une entreprise de detailing automobile à Sens · React, Firebase, EmailJS · Espace client et back-office admin"
+            />
+            <ProjectCard
+            src={mcbatiment}
+            link='https://www.mc-batiment.fr/'
+            h3='MC Bâtiment'
+            p="Site vitrine WordPress sur thème sur-mesure pour une entreprise du bâtiment à Bitche · SEO local, galerie avant/après, actualités · Site en production"
+            />
 
             <ProjectCard
             src={taskmanager}
