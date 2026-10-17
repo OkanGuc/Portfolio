@@ -13,6 +13,7 @@ import chezmire from '../../assets/chezmire.png'
 import taskmanager from '../../assets/taskmanager.png'
 import goclean from '../../assets/goclean.jpg'
 import mcbatiment from '../../assets/mcbatiment.jpg'
+import icm from '../../assets/icm.jpg'
 function Projects() {
   return (
     <section id="projects" className="wrapper">
@@ -22,6 +23,13 @@ function Projects() {
             <p className="sectionLead">Une sélection d’applications web et mobiles, du site vitrine à l’application full-stack déployée en production.</p>
         </div>
         <div className={styles.grid}>
+
+            <ProjectCard
+            src={icm}
+            link='https://icm-amenagement.fr/'
+            h3='ICM Aménagement'
+            p="Site vitrine WordPress sur thème sur-mesure pour une entreprise d'aménagement extérieur à Bischwiller · Terrassement, pavage, location de mini-pelle · SEO local"
+            />
 
             <ProjectCard
             src={goclean}
